@@ -3,6 +3,8 @@ import "@/styles/globals.css";
 import { Inter } from "next/font/google";
 
 import { TRPCReactProvider } from "@/trpc/react";
+import { ModalProvider } from "@/components/modal-provider";
+import { Toaster } from "@/components/ui/toaster";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -21,9 +23,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={`font-sans ${inter.variable}`}>
-        <TRPCReactProvider>{children}</TRPCReactProvider>
+    <html lang="en" className="h-full">
+      <body className={`font-sans ${inter.variable} h-full`}>
+        <TRPCReactProvider>
+          <ModalProvider />
+          <Toaster />
+          {children}
+        </TRPCReactProvider>
       </body>
     </html>
   );

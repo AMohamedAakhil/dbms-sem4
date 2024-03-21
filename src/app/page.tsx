@@ -11,7 +11,7 @@ export default async function Home() {
     redirect("/login");
   }
   return (
-    <main>
+    <main className="w-full p-3">
      hi
     </main>
   );
