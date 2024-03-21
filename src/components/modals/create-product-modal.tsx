@@ -40,7 +40,7 @@ export const CreateProductModal = () => {
     onSuccess: async () => {
       router.refresh();
       toast({
-        title: "Task created successfully!",
+        title: "Product created successfully!",
         variant: "default",
       });
       setLoading(false);

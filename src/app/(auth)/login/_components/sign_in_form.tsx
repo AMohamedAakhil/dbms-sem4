@@ -23,7 +23,7 @@ const SignInForm = () => {
   };
   return (
     <div className="w-[20rem]">
-      <div className="mb-5 text-xl font-bold">TradeSentry</div>
+      <div className="mb-5 text-xl font-bold">BDSM ECOMMERCE </div>
       <Button className="w-full" onClick={submitEmail}>
         {loading ? (
           <AiOutlineLoading3Quarters className="animate-spin" />
