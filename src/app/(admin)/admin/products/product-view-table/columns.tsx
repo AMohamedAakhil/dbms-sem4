@@ -80,16 +80,6 @@ export const ProductColumns: ColumnDef<Product>[] = [
             >
               Copy Product ID
             </DropdownMenuItem>
-            <DropdownMenuSeparator />
-            <DropdownMenuItem>View task</DropdownMenuItem>
-            <DropdownMenuItem
-              onClick={() => {
-                console.log(product.id);
-              }}
-            >
-              Delete task
-            </DropdownMenuItem>
-            <DropdownMenuItem>Share task</DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
       );
